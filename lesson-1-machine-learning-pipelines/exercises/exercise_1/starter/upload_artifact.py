@@ -12,6 +12,18 @@ logger = logging.getLogger()
 def go(args):
 
     logger.info("Creating run exercise_1")
+    run = wandb.init(project="exercise_1", job_type="upload_file")
+
+    logger.info("Creating artifact")
+    artifact = wandb.Artifact(
+        name=args.artifact_name,
+        type=args.artifact_type,
+        description=args.artifact_description,
+    )
+    artifact.add_file(args.input_file)
+
+    logger.info("Logging artifact")
+    run.log_artifact(artifact)
 
     # Create a W&B run in the project ``exercise_1``. Set the option ``job_type="upload_file"``:
 

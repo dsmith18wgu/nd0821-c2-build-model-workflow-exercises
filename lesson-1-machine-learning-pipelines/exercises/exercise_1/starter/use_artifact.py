@@ -3,23 +3,24 @@ import argparse
 import logging
 import pathlib
 import wandb
-
+import os
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
 
 
 def go(args):
-
     logger.info("Creating run in project exercise_1")
     run = wandb.init(project="exercise_1", job_type="use_file")
 
     logger.info("Getting artifact")
+    artifact = run.use_artifact(args.artifact_name)
 
-    # YOUR CODE HERE: get the artifact and store its local path in the variable "artifact_path"
-    # HINT: you can get the artifact path by using the "file()" method
+    # Specify an absolute path for the artifacts directory
+    artifacts_dir = os.path.join(os.getcwd(), "artifacts")
 
-    artifact_path = artifact.file()
+    # Download the artifact
+    artifact_path = artifact.get_path("zen.txt").download(root="artifacts")
 
     logger.info("Artifact content:")
     with open(artifact_path, "r") as fp:

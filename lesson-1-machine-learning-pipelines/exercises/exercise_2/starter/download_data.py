@@ -12,7 +12,6 @@ logger = logging.getLogger()
 
 
 def go(args):
-
     # Derive the base name of the file from the URL
     basename = pathlib.Path(args.file_url).name.split("?")[0].split("#")[0]
 
@@ -21,8 +20,7 @@ def go(args):
     # destroyed at the end of the context, so we don't leave anything
     # behind and the file gets removed even in case of errors
     logger.info(f"Downloading {args.file_url} ...")
-    with tempfile.NamedTemporaryFile(mode='wb+') as fp:
-
+    with tempfile.NamedTemporaryFile(mode='wb+', delete=False) as fp:
         logger.info("Creating run exercise_2")
         with wandb.init(project="exercise_2", job_type="download_data") as run:
             # Download the file streaming and write to open temp file
@@ -49,7 +47,6 @@ def go(args):
             # This makes sure that the artifact is uploaded before the
             # tempfile is destroyed
             artifact.wait()
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(

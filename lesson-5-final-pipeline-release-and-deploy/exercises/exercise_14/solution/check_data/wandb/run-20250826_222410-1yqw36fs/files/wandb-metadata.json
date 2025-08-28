@@ -1,0 +1,69 @@
+{
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.11",
+    "heartbeatAt": "2025-08-27T03:24:11.493650",
+    "startedAt": "2025-08-27T03:24:10.926579",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "-s",
+        "-vv",
+        ".",
+        "--reference_artifact",
+        "exercise_14/preprocessed_data.csv:latest",
+        "--sample_artifact",
+        "preprocessed_data.csv:latest",
+        "--ks_alpha",
+        "0.05"
+    ],
+    "state": "running",
+    "program": "/home/dean/miniconda3/envs/mlflow-60000e2b97642ccc38c7a9ee503977f0abd54819/bin/pytest",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/dsmith18wgu/nd0821-c2-build-model-workflow-exercises.git",
+        "commit": "9452acc3f4e447027c4e68fa330c97dee07576bb"
+    },
+    "email": "dsmith18@wgu.edu",
+    "root": "/home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1",
+    "host": "Dean-Laptop",
+    "username": "dean",
+    "executable": "/home/dean/miniconda3/envs/mlflow-60000e2b97642ccc38c7a9ee503977f0abd54819/bin/python3.12",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2099.933,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2099.933,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.933,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.933,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2099.933,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1006.853931427002,
+            "used": 27.646015167236328
+        }
+    },
+    "memory": {
+        "total": 8.698471069335938
+    }
+}

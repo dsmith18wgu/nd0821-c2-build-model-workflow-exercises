@@ -1,0 +1,191 @@
+2025-08-26 22:22:42,397 INFO    StreamThr :32790 [internal.py:wandb_internal():86] W&B internal server running at pid: 32790, started at: 2025-08-26 22:22:42.396250
+2025-08-26 22:22:42,400 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: status
+2025-08-26 22:22:42,402 INFO    WriterThread:32790 [datastore.py:open_for_write():87] open: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/run-dewrleqt.wandb
+2025-08-26 22:22:42,410 DEBUG   SenderThread:32790 [sender.py:send():378] send: header
+2025-08-26 22:22:42,411 DEBUG   SenderThread:32790 [sender.py:send():378] send: run
+2025-08-26 22:22:42,801 INFO    SenderThread:32790 [dir_watcher.py:__init__():211] watching files in: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files
+2025-08-26 22:22:42,801 INFO    SenderThread:32790 [sender.py:_start_run_threads():1099] run started: dewrleqt with start time 1756264962.396576
+2025-08-26 22:22:42,811 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: check_version
+2025-08-26 22:22:42,811 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: check_version
+2025-08-26 22:22:43,008 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: run_start
+2025-08-26 22:22:43,010 DEBUG   HandlerThread:32790 [system_info.py:__init__():26] System info init
+2025-08-26 22:22:43,010 DEBUG   HandlerThread:32790 [system_info.py:__init__():41] System info init done
+2025-08-26 22:22:43,010 INFO    HandlerThread:32790 [system_monitor.py:start():194] Starting system monitor
+2025-08-26 22:22:43,010 INFO    SystemMonitor:32790 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-08-26 22:22:43,011 INFO    HandlerThread:32790 [system_monitor.py:probe():214] Collecting system info
+2025-08-26 22:22:43,012 INFO    SystemMonitor:32790 [interfaces.py:start():190] Started cpu monitoring
+2025-08-26 22:22:43,014 INFO    SystemMonitor:32790 [interfaces.py:start():190] Started disk monitoring
+2025-08-26 22:22:43,016 INFO    SystemMonitor:32790 [interfaces.py:start():190] Started memory monitoring
+2025-08-26 22:22:43,017 INFO    SystemMonitor:32790 [interfaces.py:start():190] Started network monitoring
+2025-08-26 22:22:43,023 DEBUG   HandlerThread:32790 [system_info.py:probe():150] Probing system
+2025-08-26 22:22:43,025 DEBUG   HandlerThread:32790 [system_info.py:_probe_git():135] Probing git
+2025-08-26 22:22:43,041 DEBUG   HandlerThread:32790 [system_info.py:_probe_git():143] Probing git done
+2025-08-26 22:22:43,041 DEBUG   HandlerThread:32790 [system_info.py:probe():198] Probing system done
+2025-08-26 22:22:43,042 DEBUG   HandlerThread:32790 [system_monitor.py:probe():223] {'os': 'Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39', 'python': '3.10.18', 'heartbeatAt': '2025-08-27T03:22:43.023682', 'startedAt': '2025-08-27T03:22:42.383977', 'docker': None, 'cuda': None, 'args': ('--file_url', 'https://github.com/udacity/nd0821-c2-build-model-workflow-exercises/blob/master/lesson-2-data-exploration-and-preparation/exercises/exercise_4/starter/genres_mod.parquet?raw=true', '--artifact_name', 'raw_data.parquet', '--artifact_type', 'raw_data', '--artifact_description', 'Data as downloaded'), 'state': 'running', 'program': '/home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/download_data.py', 'codePathLocal': 'download_data.py', 'codePath': 'lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/download_data.py', 'git': {'remote': 'https://github.com/dsmith18wgu/nd0821-c2-build-model-workflow-exercises.git', 'commit': '9452acc3f4e447027c4e68fa330c97dee07576bb'}, 'email': 'dsmith18@wgu.edu', 'root': '/home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1', 'host': 'Dean-Laptop', 'username': 'dean', 'executable': '/home/dean/miniconda3/envs/mlflow-e190ff1f176d660e6839ac34c7d6bc74393e2ccd/bin/python', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 2099.933, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2099.933, 'min': 0.0, 'max': 0.0}, {'current': 2099.933, 'min': 0.0, 'max': 0.0}, {'current': 2099.933, 'min': 0.0, 'max': 0.0}, {'current': 2099.933, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 1006.853931427002, 'used': 27.434688568115234}}, 'memory': {'total': 8.698471069335938}}
+2025-08-26 22:22:43,042 INFO    HandlerThread:32790 [system_monitor.py:probe():224] Finished collecting system info
+2025-08-26 22:22:43,042 INFO    HandlerThread:32790 [system_monitor.py:probe():227] Publishing system info
+2025-08-26 22:22:43,042 DEBUG   HandlerThread:32790 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2025-08-26 22:22:43,805 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/conda-environment.yaml
+2025-08-26 22:22:44,226 DEBUG   HandlerThread:32790 [system_info.py:_save_conda():219] Saving conda packages done
+2025-08-26 22:22:44,233 INFO    HandlerThread:32790 [system_monitor.py:probe():229] Finished publishing system info
+2025-08-26 22:22:44,236 DEBUG   SenderThread:32790 [sender.py:send():378] send: files
+2025-08-26 22:22:44,237 INFO    SenderThread:32790 [sender.py:_save_file():1365] saving file wandb-metadata.json with policy now
+2025-08-26 22:22:44,305 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: python_packages
+2025-08-26 22:22:44,306 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: python_packages
+2025-08-26 22:22:44,306 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: stop_status
+2025-08-26 22:22:44,307 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: stop_status
+2025-08-26 22:22:44,309 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: internal_messages
+2025-08-26 22:22:44,527 DEBUG   SenderThread:32790 [sender.py:send():378] send: telemetry
+2025-08-26 22:22:44,803 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/conda-environment.yaml
+2025-08-26 22:22:44,803 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/requirements.txt
+2025-08-26 22:22:44,804 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/wandb-metadata.json
+2025-08-26 22:22:44,909 INFO    wandb-upload_0:32790 [upload_job.py:push():131] Uploaded file /tmp/tmpop3r9oikwandb/pgi830fe-wandb-metadata.json
+2025-08-26 22:22:45,798 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: log_artifact
+2025-08-26 22:22:45,799 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: log_artifact
+2025-08-26 22:22:45,804 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/output.log
+2025-08-26 22:22:46,984 INFO    wandb-upload_0:32790 [upload_job.py:push():89] Uploaded file /home/dean/.local/share/wandb/artifacts/staging/tmpvfnz_bvb
+2025-08-26 22:22:47,619 INFO    SenderThread:32790 [sender.py:send_request_log_artifact():1431] logged artifact raw_data.parquet - {'id': 'QXJ0aWZhY3Q6MTk5MDg1ODQxOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcyNTg4MDAxMA==', 'latestArtifact': None}}
+2025-08-26 22:22:47,619 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: status_report
+2025-08-26 22:22:47,805 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/output.log
+2025-08-26 22:22:48,184 DEBUG   SenderThread:32790 [sender.py:send():378] send: telemetry
+2025-08-26 22:22:48,186 DEBUG   SenderThread:32790 [sender.py:send():378] send: exit
+2025-08-26 22:22:48,186 INFO    SenderThread:32790 [sender.py:send_exit():585] handling exit code: 0
+2025-08-26 22:22:48,187 INFO    SenderThread:32790 [sender.py:send_exit():587] handling runtime: 5
+2025-08-26 22:22:48,187 INFO    SenderThread:32790 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2025-08-26 22:22:48,188 INFO    SenderThread:32790 [sender.py:send_exit():593] send defer
+2025-08-26 22:22:48,188 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,189 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 0
+2025-08-26 22:22:48,189 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,189 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 0
+2025-08-26 22:22:48,189 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 1
+2025-08-26 22:22:48,189 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,190 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 1
+2025-08-26 22:22:48,190 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,190 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 1
+2025-08-26 22:22:48,190 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 2
+2025-08-26 22:22:48,190 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,190 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 2
+2025-08-26 22:22:48,190 INFO    HandlerThread:32790 [system_monitor.py:finish():203] Stopping system monitor
+2025-08-26 22:22:48,191 DEBUG   SystemMonitor:32790 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-08-26 22:22:48,191 DEBUG   SystemMonitor:32790 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-08-26 22:22:48,192 INFO    HandlerThread:32790 [interfaces.py:finish():202] Joined cpu monitor
+2025-08-26 22:22:48,192 DEBUG   SystemMonitor:32790 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-08-26 22:22:48,192 INFO    HandlerThread:32790 [interfaces.py:finish():202] Joined disk monitor
+2025-08-26 22:22:48,193 INFO    HandlerThread:32790 [interfaces.py:finish():202] Joined memory monitor
+2025-08-26 22:22:48,193 INFO    HandlerThread:32790 [interfaces.py:finish():202] Joined network monitor
+2025-08-26 22:22:48,194 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,194 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 2
+2025-08-26 22:22:48,194 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 3
+2025-08-26 22:22:48,194 DEBUG   SenderThread:32790 [sender.py:send():378] send: stats
+2025-08-26 22:22:48,195 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,195 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 3
+2025-08-26 22:22:48,195 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,196 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 3
+2025-08-26 22:22:48,196 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 4
+2025-08-26 22:22:48,196 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,196 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 4
+2025-08-26 22:22:48,196 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,196 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 4
+2025-08-26 22:22:48,196 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 5
+2025-08-26 22:22:48,196 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,196 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 5
+2025-08-26 22:22:48,197 DEBUG   SenderThread:32790 [sender.py:send():378] send: summary
+2025-08-26 22:22:48,197 INFO    SenderThread:32790 [sender.py:_save_file():1365] saving file wandb-summary.json with policy end
+2025-08-26 22:22:48,198 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,198 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 5
+2025-08-26 22:22:48,198 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 6
+2025-08-26 22:22:48,198 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,198 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 6
+2025-08-26 22:22:48,198 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,198 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 6
+2025-08-26 22:22:48,203 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: status_report
+2025-08-26 22:22:48,354 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 7
+2025-08-26 22:22:48,354 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:48,355 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 7
+2025-08-26 22:22:48,355 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:48,355 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 7
+2025-08-26 22:22:48,806 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/config.yaml
+2025-08-26 22:22:48,806 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/wandb-summary.json
+2025-08-26 22:22:49,186 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-26 22:22:49,536 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 8
+2025-08-26 22:22:49,536 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: poll_exit
+2025-08-26 22:22:49,536 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:49,537 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 8
+2025-08-26 22:22:49,537 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:49,537 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 8
+2025-08-26 22:22:49,537 INFO    SenderThread:32790 [job_builder.py:build():298] Attempting to build job artifact
+2025-08-26 22:22:49,538 INFO    SenderThread:32790 [job_builder.py:_get_source_type():428] is repo sourced job
+2025-08-26 22:22:49,541 INFO    SenderThread:32790 [job_builder.py:build():404] adding wandb-job metadata file
+2025-08-26 22:22:49,547 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 9
+2025-08-26 22:22:49,548 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:49,548 DEBUG   SenderThread:32790 [sender.py:send():378] send: artifact
+2025-08-26 22:22:49,548 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 9
+2025-08-26 22:22:49,807 INFO    Thread-12 :32790 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/output.log
+2025-08-26 22:22:50,034 INFO    wandb-upload_1:32790 [upload_job.py:push():89] Uploaded file /home/dean/.local/share/wandb/artifacts/staging/tmp3_s_qn4z
+2025-08-26 22:22:50,144 INFO    wandb-upload_0:32790 [upload_job.py:push():89] Uploaded file /home/dean/.local/share/wandb/artifacts/staging/tmp2bvzz9m4
+2025-08-26 22:22:50,187 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-26 22:22:50,949 INFO    SenderThread:32790 [sender.py:send_artifact():1443] sent artifact job-https___github.com_dsmith18wgu_nd0821-c2-build-model-workfl..deploy_exercises_exercise_14_solution_download_download_data.py - {'id': 'QXJ0aWZhY3Q6MTk5MDg1ODY4NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjcyNTg4MDAyNA==', 'latestArtifact': None}}
+2025-08-26 22:22:50,949 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:50,949 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 9
+2025-08-26 22:22:50,949 INFO    SenderThread:32790 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-08-26 22:22:51,808 INFO    SenderThread:32790 [dir_watcher.py:finish():388] scan: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files
+2025-08-26 22:22:51,809 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/output.log output.log
+2025-08-26 22:22:51,809 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/conda-environment.yaml conda-environment.yaml
+2025-08-26 22:22:51,810 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/wandb-metadata.json wandb-metadata.json
+2025-08-26 22:22:51,810 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/wandb-summary.json wandb-summary.json
+2025-08-26 22:22:51,810 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/config.yaml config.yaml
+2025-08-26 22:22:51,810 INFO    SenderThread:32790 [dir_watcher.py:finish():402] scan save: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/requirements.txt requirements.txt
+2025-08-26 22:22:51,810 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 10
+2025-08-26 22:22:51,811 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: poll_exit
+2025-08-26 22:22:51,811 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:51,811 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 10
+2025-08-26 22:22:51,812 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:51,813 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 10
+2025-08-26 22:22:51,813 INFO    SenderThread:32790 [file_pusher.py:finish():172] shutting down file pusher
+2025-08-26 22:22:52,061 INFO    wandb-upload_3:32790 [upload_job.py:push():131] Uploaded file /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/conda-environment.yaml
+2025-08-26 22:22:52,097 INFO    wandb-upload_2:32790 [upload_job.py:push():131] Uploaded file /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/output.log
+2025-08-26 22:22:52,188 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-26 22:22:52,189 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: poll_exit
+2025-08-26 22:22:52,335 INFO    wandb-upload_0:32790 [upload_job.py:push():131] Uploaded file /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/requirements.txt
+2025-08-26 22:22:52,337 INFO    wandb-upload_1:32790 [upload_job.py:push():131] Uploaded file /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/wandb-summary.json
+2025-08-26 22:22:52,354 INFO    wandb-upload_4:32790 [upload_job.py:push():131] Uploaded file /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/files/config.yaml
+2025-08-26 22:22:52,555 INFO    Thread-11 (_thread_body):32790 [sender.py:transition_state():613] send defer: 11
+2025-08-26 22:22:52,555 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:52,555 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 11
+2025-08-26 22:22:52,556 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:52,556 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 11
+2025-08-26 22:22:52,556 INFO    SenderThread:32790 [file_pusher.py:join():178] waiting for file pusher
+2025-08-26 22:22:52,556 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 12
+2025-08-26 22:22:52,557 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:52,557 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 12
+2025-08-26 22:22:52,558 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:52,558 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 12
+2025-08-26 22:22:52,558 INFO    SenderThread:32790 [file_stream.py:finish():595] file stream finish called
+2025-08-26 22:22:52,642 INFO    SenderThread:32790 [file_stream.py:finish():599] file stream finish is done
+2025-08-26 22:22:52,642 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 13
+2025-08-26 22:22:52,643 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:52,643 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 13
+2025-08-26 22:22:52,644 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:52,644 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 13
+2025-08-26 22:22:52,644 INFO    SenderThread:32790 [sender.py:transition_state():613] send defer: 14
+2025-08-26 22:22:52,644 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: defer
+2025-08-26 22:22:52,644 INFO    HandlerThread:32790 [handler.py:handle_request_defer():172] handle defer: 14
+2025-08-26 22:22:52,645 DEBUG   SenderThread:32790 [sender.py:send():378] send: final
+2025-08-26 22:22:52,645 DEBUG   SenderThread:32790 [sender.py:send():378] send: footer
+2025-08-26 22:22:52,645 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: defer
+2025-08-26 22:22:52,645 INFO    SenderThread:32790 [sender.py:send_request_defer():609] handle sender defer: 14
+2025-08-26 22:22:52,646 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: poll_exit
+2025-08-26 22:22:52,647 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: poll_exit
+2025-08-26 22:22:52,648 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: internal_messages
+2025-08-26 22:22:52,649 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: server_info
+2025-08-26 22:22:52,650 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: server_info
+2025-08-26 22:22:52,693 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: get_summary
+2025-08-26 22:22:52,694 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: sampled_history
+2025-08-26 22:22:52,694 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: job_info
+2025-08-26 22:22:52,699 DEBUG   SenderThread:32790 [sender.py:send_request():405] send_request: job_info
+2025-08-26 22:22:52,738 DEBUG   HandlerThread:32790 [handler.py:handle_request():146] handle_request: shutdown
+2025-08-26 22:22:52,739 INFO    HandlerThread:32790 [handler.py:finish():869] shutting down handler
+2025-08-26 22:22:53,694 INFO    WriterThread:32790 [datastore.py:close():296] close: /home/dean/nd0821-c2-build-model-workflow-exercises/nd0821-c2-build-model-workflow-exercises-1/lesson-5-final-pipeline-release-and-deploy/exercises/exercise_14/solution/download/wandb/run-20250826_222242-dewrleqt/run-dewrleqt.wandb
+2025-08-26 22:22:53,700 INFO    SenderThread:32790 [sender.py:finish():1521] shutting down sender
+2025-08-26 22:22:53,701 INFO    SenderThread:32790 [file_pusher.py:finish():172] shutting down file pusher
+2025-08-26 22:22:53,701 INFO    SenderThread:32790 [file_pusher.py:join():178] waiting for file pusher
